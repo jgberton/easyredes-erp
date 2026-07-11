@@ -14,7 +14,7 @@
 
 # 🛡 EasyRedes ERP
 
-### Operational ERP built for safety net installation companies.
+### Cloud ERP for Safety Net Installation Companies  
 
 EasyRedes is a cross-platform ERP that centralizes the entire operational workflow of field service companies, from customer management and quotations to inventory control, scheduling, PDF generation and service execution.
 
@@ -26,7 +26,11 @@ Designed to replace spreadsheets and manual processes with a modern, cloud-nativ
 
 # 🎯 Business Problem
 
-Small and medium-sized safety net installation companies commonly manage operations using spreadsheets, handwritten notes and disconnected tools.
+Most safety net installation companies still rely on spreadsheets, paper notes and disconnected tools to manage their daily operations.
+
+This makes quotation generation slow, inventory unreliable and customer history difficult to track.
+
+EasyRedes was created to centralize the entire workflow into a single cloud platform.
 
 This creates problems such as:
 
@@ -47,23 +51,19 @@ I designed and developed the product from concept to a functional beta with a pr
 
 As the founder, product lead and full-stack developer, I was responsible for:
 
-- Product Discovery
-- UX/UI Design
-- Business Rules
-- Software Architecture
-- Mobile Development
-- Web Development
-- Firebase Infrastructure
-- Authentication
-- Firestore Data Modeling
-- Cloud Functions
-- PDF Generation
-- Inventory Logic
-- CRM
-- Multi-tenant Architecture
-- Security Rules
-- Mercado Pago Integration
-- Deployment
+-Product
+
+-Architecture
+
+-Frontend
+
+-Backend
+
+-Cloud Infrastructure
+
+-Business Rules
+
+-Deployment
 
 ---
 
@@ -121,18 +121,11 @@ As the founder, product lead and full-stack developer, I was responsible for:
 
 # 📊 Technical Highlights
 
-- Multi-tenant architecture
-- Firebase Security Rules
-- Repository Pattern
-- Context-based State Management
-- Cloud Functions
-- Cache-first data loading with TTL
-- Firestore Batch Operations
-- Real-time synchronization
-- PDF generation
-- Responsive Web support
-- Cross-platform architecture
-
+| 🏗 Architecture | ⚙ Business | ☁ Cloud | 🚀 Engineering |
+|----------------|------------|----------|----------------|
+| Multi-tenant SaaS | Domain-driven Business Rules | Firebase Cloud Functions | Repository Pattern |
+| Context-based State | Automatic Inventory Updates | Firestore Security Rules | Firestore Batch Operations |
+| Responsive Web | PDF Generation | Real-time Synchronization | Cache-first Loading (TTL) |
 ---
 
 # ⚙ Tech Stack
@@ -238,7 +231,7 @@ This domain-specific logic connects quotation, execution and inventory in a sing
 
 ---
 
-# 🛠 Engineering Roadmap
+# 🛠 Product Roadmap
 
 EasyRedes is currently a functional beta prepared for closed testing and product validation.
 
