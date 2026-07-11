@@ -37,15 +37,15 @@ This creates problems such as:
 - No operational visibility
 - Time wasted on repetitive tasks
 
-EasyRedes was designed to digitalize the complete workflow through a single platform.
+EasyRedes was designed to digitize the complete workflow through a single platform.
 
 ---
 
 # 👨‍💻 My Role
 
-I designed and developed the entire product from concept to production-ready architecture.
+I designed and developed the product from concept to a functional beta with a production-oriented architecture.  
 
-As Product Owner and Full Stack Developer I was responsible for:
+As the founder, product lead and full-stack developer, I was responsible for:
 
 - Product Discovery
 - UX/UI Design
@@ -87,36 +87,34 @@ As Product Owner and Full Stack Developer I was responsible for:
 | ⚙ Service Execution | Automatic stock debit after completion |
 | 🔒 Multi-tenant | Company-isolated data |
 | ☁ Cloud Sync | Firebase real-time synchronization |
-| 📱 Cross-platform | Android, Web and future iOS support |
-| 💳 Subscription Ready | Mercado Pago integration prepared |
+| 📱 Cross-platform | Responsive Web and Android from a shared React Native codebase |
+| 💳 Subscription Foundation | Mercado Pago backend integration prepared for SaaS billing |
 
 ---
 
 # 🏗 Architecture
 
 ```text
-React Native (Expo)
-        │
-        ▼
-Firebase Authentication
-        │
-        ▼
-Cloud Firestore
-        │
-        ▼
-Repositories
-        │
-        ▼
-Business Rules
-        │
-        ▼
-Cloud Functions
-        │
-        ▼
-PDF Generation
-        │
-        ▼
-Inventory & CRM
+                React Native + Expo Router
+                           │
+                           ▼
+                  Authentication Gate
+                           │
+                           ▼
+             Context Facades and Domain Hooks
+                           │
+                           ▼
+      Repositories + TTL Cache + Focused Listeners
+                           │
+                           ▼
+                     Cloud Firestore
+                    /       |        \
+                   ▼        ▼         ▼
+          Inventory Batch   CRM    Scheduling
+              Updates               & Quotes
+
+        Firebase Storage          Cloud Functions
+          Logos and PDFs          Mercado Pago Backend
 ```
 
 ---
@@ -128,7 +126,7 @@ Inventory & CRM
 - Repository Pattern
 - Context-based State Management
 - Cloud Functions
-- Offline-first cache
+- Cache-first data loading with TTL
 - Firestore Batch Operations
 - Real-time synchronization
 - PDF generation
@@ -199,11 +197,28 @@ Optimizing Firestore listeners, local cache and repository architecture to reduc
 
 ---
 
+# 🧠 Domain Logic
+
+EasyRedes is not a generic CRUD application.
+
+Its quotation engine translates real installation rules into software, including:
+
+- Opening dimensions and perimeter calculations
+- Safety-net height ranges
+- Rope and hook estimation
+- Structure and fixing methods
+- Material cost calculation
+- Suggested pricing and margin visibility
+- Automatic stock debit after service execution
+
+This domain-specific logic connects quotation, execution and inventory in a single operational workflow.  
+---
+
 # 📈 Why this project stands out
 
 ✅ Complete ERP workflow
 
-✅ Production-ready architecture
+✅ Production-oriented architecture
 
 ✅ Multi-tenant SaaS
 
@@ -219,9 +234,32 @@ Optimizing Firestore listeners, local cache and repository architecture to reduc
 
 ✅ Responsive Web
 
-✅ Scalable architecture
+✅ Scalable multi-tenant foundation
 
 ---
+
+# 🛠 Engineering Roadmap
+
+EasyRedes is currently a functional beta prepared for closed testing and product validation.
+
+### Implemented
+
+- Complete quotation-to-execution workflow
+- Multi-tenant Firestore structure
+- Inventory batch updates
+- PDF quotations and receipts
+- Security Rules
+- Mercado Pago backend foundation
+
+### Next Engineering Milestones
+
+- Automated tests for inventory debit
+- Secure Mercado Pago webhook validation
+- Query limits and pagination
+- Subscription checkout interface
+- CI/CD pipeline
+- App Check and rate limiting
+- Refactoring of large operational screens  
 
 # 📚 What I Learned
 
