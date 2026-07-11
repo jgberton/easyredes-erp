@@ -69,16 +69,9 @@ As Product Owner and Full Stack Developer I was responsible for:
 
 # 📱 Screenshots
 
-> (Screenshots will be added here)
-
-- Dashboard
-- Scheduling
-- Customer Management
-- Inventory
-- Quotation
-- Service Execution
-- PDF Generation
-- Mobile Version
+<p align="center">
+  <img src="./assets/prints.png" width="100%">
+</p>
 
 ---
 
